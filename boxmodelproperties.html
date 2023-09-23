@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL PROPERTIES</title>
+    <script src="https://kit.fontawesome.com/294595a3b9.js" crossorigin="anonymous"></script>
+    <style>
+        #uname[type=text] {
+            border: none;
+            border-bottom: 2px solid grey;
+            width: 250px;
+        }
+        #sname[type=password] {
+            border: none;
+            border-bottom: 2px solid grey;
+            width: 250px;
+        }
+        .it{
+            background-color: white;
+            position: fixed;
+            box-sizing: border-box;
+            border: 0px solid black ;
+            border-radius: 0 3px 3px 0;
+            text-align: center;
+            padding: 20px 0px 0px 0px;
+            top: 20%;
+            left: 38%;
+            width: 30%;
+            height: 70%;
+            border-radius: 15px;
+        }
+        .po{
+            position: absolute;
+            top: 90px;
+            left: 100px;
+        }
+        .pq{
+            position: absolute;
+            top: 170px;
+            left: 100px;
+        }
+        h2{
+            text-align: center;
+        }
+        body{
+            background-image:url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+        }
+        .for{
+            position: absolute;
+            left: 250px;
+            color: gray;
+        }
+        .lo{
+            position: absolute;
+            top: 300px;
+            left: 150px;
+            
+        }
+       #u[type=submit] {
+            border: none;
+            background-image: linear-gradient(to top right, pink,blue);
+            padding:5px 50px ;
+            border-radius: 15px;
+       }
+       .a1{
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <div class="it">
+    <h2>Login</h2><br><br>
+    <div class="po">
+    <label for="uname"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USERNAME</label><br><br></div>
+    <input type="text" id="uname" placeholder="               ENTER A USERNAME"><br><br><br>
+    <div class="pq"><label for="sname"><i class="fa-solid fa-lock"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PASSWORD</label><br><br></div><br>
+    <input type="password" id="sname" placeholder="               ENTER A PASSWORD">
+    <div class="for">forget password ?</div><br>
+    <div class="lo">
+    <input type="submit" id="u" value="LOGIN">
+    <br><br>
+    <div class="a1">
+        or signup using<br><br>
+        <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-twitter fa-lg"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-google"></i>
+        <div></div>
+        <br><br>
+       <div class="a1"> or signup using</div>
+       <br>
+       <div class="a1">SIGN IN</div> 
+       
+    </div>
+</div>
+</div>
+</body>
+</html>

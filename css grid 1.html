@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: #333;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.pic1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+   
+}
+
+.pic2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+   
+}
+
+.pic3 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 6;
+
+    
+}
+
+.pic4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+
+  
+}
+
+.pic5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+
+    
+}
+
+.pic6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+
+   
+}
+.pic7 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.pic8 {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gallery">
+            <div class="pic1"><img class="gallery__img" src="data:image/jpeg;base64,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" alt="load"></div>
+            <div class="pic2"><img class="gallery__img" src="data:image/png;base64,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" alt="load"></div>
+            <div class="pic3"><img class="gallery__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThqYeS3lmJRgY2arqHYtgETG7FDT1RUFoLvQ&usqp=CAU" alt="load"></div>
+            <div class="pic4"><img class="gallery__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcMwVL2JvB9weEj4lrk4y2YEDH2qD-OpBTKQ&usqp=CAU" alt="load"></div>
+            <div class="pic4"><img class="gallery__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzqbvR8wpPI4WNw7TxWfM9CHGB9GUfqEbnQ&usqp=CAU" alt="load"></div>
+            <div class="pic5"><img class="gallery__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF2U8wWHVl6OyH05EbDuBgkFzh9FVlsGMIDXv_mn1xVLVTNjxomaO9Lx84DdjekSsCEvc&usqp=CAU" alt="load"></div>
+            <div class="pic6"><img class="gallery__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMqLS1pBAOXrtdr6w2SJ0d2dwdfE4A8n9b-w&usqp=CAU" alt="load"></div>
+            <div class="pic7"><img class="gallery__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDojU5Y1ZX3loBXdWFP1YGpgFzbnvRH71x6A&usqp=CAU" alt="load"></div>
+            <div class="pic8"><img class="gallery__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgX7CHoeliPHdW5-7rQ4upbBXDIKRKrLGqYw&usqp=CAU" alt="load"></div>
+        </div>
+    </div>
+</body>
+</html>

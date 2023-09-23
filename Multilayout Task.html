@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilayout Task</title>
+    <style>
+        .page1{
+            position: absolute;
+            padding: 50px;
+            border: 2px solid black;
+            width: 45%;
+            height: 120%;
+        }
+        h1{
+            position: static;
+            width: 100%;
+            height: 10%;
+            font-family: 'Times New Roman';
+            font-size: 500%;
+            font-weight: 1900;
+            margin-top: -2%;
+            margin-left: 7%;
+            
+        }
+        h1::after{
+            content:'  NEWS';
+            color: rgb(253, 4, 4);
+        }
+        nav{
+            position: absolute;
+            left: 5%;
+            background-color: grey;
+            width: 90%;
+            height: 5%;
+            margin-top: -5%;
+        }
+        .n1{
+            position: absolute;
+            top: 5%;
+            left: 1%; 
+            font-size: xx-large;
+        }
+        .n2{
+            position: absolute;
+            top: 50%;
+            left: 23%;
+        }
+        .n3{
+            position: absolute;
+            top: 15%;
+            left: 50%;
+        }
+        .n4{
+            position: absolute;
+            top: 15%;
+            left: 80%;
+        }
+        h4{
+            margin-top: 10%;
+        }
+        .m1{
+            position: absolute;
+            column-count: 2;
+            column-gap: 15%;
+            width: 50%;
+            height: 50%;
+            font-size: small;
+            text-align: justify;
+        }
+        .m1::first-letter{
+            font-size: xx-large;
+            font-weight: bold;
+            
+        }
+        .n5{
+            position: absolute;
+            box-sizing: border-box;
+            background-color: grey;
+            width: 50%;
+            height: 20%;
+            top: 58%;
+        }
+        .nn5{
+            position: absolute;
+            width: 40%;
+            top: 43%;
+            left: 47%;
+            font-size: xx-small;
+            text-align: justify;
+        }
+        .m2{
+            position: absolute;
+            transform: rotate(90deg);
+            left: 48%;
+            top: 43%;
+        }
+        .n6{
+            position: absolute;
+            column-count: 3;
+            column-gap: 7%;
+            width: 80%;
+            height: 50%;
+            font-size: small;
+            text-align: justify;
+            top: 80%;
+        }
+        .page2{
+            position: absolute;
+            padding: 50px;
+            border: 2px solid black;
+            width: 45%;
+            height: 120%;
+            left: 55%;
+        }
+        h3{
+            font-size: 20px;
+        }
+        .o1{
+            position: absolute;
+            column-count: 3;
+            column-gap: 7%;
+            width: 85%;
+            height: 50%;
+            font-size: small;
+            text-align: justify;
+            top: 12%;
+        }
+        .o2{
+            position: absolute;
+            column-count: 2;
+            column-gap: 9%;
+            width: 55%;
+            height: 50%;
+            font-size: small;
+            text-align: justify;
+            top: 36%;
+        }
+        h2{
+            position: absolute;
+            top: 27%;
+        }
+        .img1{
+            position: absolute;
+            top: 36%;
+            left: 68%;
+        }
+        .o3{
+            position: absolute;
+            column-count: 3;
+            column-gap: 9%;
+            width: 85%;
+            height: 26%;
+            font-size: small;
+            text-align: justify;
+            top: 56%;
+            column-rule: 2px solid black;
+        }
+        .m7{
+            position: absolute;
+            top: 50%;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="page1"><br><br>
+        <hr>
+        <h1>DAILY</h1>
+        <nav>
+        <div class="n1">MONDAY</div><div class="n2">OCTOBER 15 2023</div><div class="n3">BREAKING NEWS</div><div class="n4">GOLDEN NEWS</div>
+    </nav>
+    <h4>Google News is a news aggregator service developed by Google. It presents a continuous flow of links to articles organized from thousands of publishers and magazines</h4>
+    <p class="m1">Chandrayaan-3 LIVE updates: ISRO's Chandrayaan-3 is about to complete its over a month long journey from Earth on Wednesday after being launched on July 14.Chandrayaan-3 LIVE Updates:ISRO on Monday said a two-way communication between the Chandrayaan-2 orbiter and Chandrayaan-3's lander module has been established.
+         ‘Welcome, buddy!’ Ch-2 orbiter formally welcomed Ch-3 LM. Two-way communication between the two is established. MOX has now more routes to reach the LM," the space agency said in a post on X (formerly Twitter).On Sunday,ISRO announced that the lander module of Chandrayaan-3, the third lunar mission of India, is expected to touch down on the surface of the Moon around 6.04 pm on August 23</p>
+         <div class="n5"><div class="nn5">Science and Technology Minister Jitendra Singh asserted on Monday that India has taken a quantum leap in space technology under Prime Minister Narendra Modi's leadership and has taken the lead in using it for aiding infrastructure and development works as well.</div></div>
+         <img class="m2" src="https://www.hindustantimes.com/ht-img/img/2023/08/21/550x309/Chandrayaan-3-was-launched-from-the-Satish-Dhawan-_1692616924111_1692616942401.jpg" width="60%" height="25%">
+         <div class="n6">The world is waiting for ISRO’s grand success as the Chandrayaan-3 mission is going great in the right direction. Lander Module has completed its final deboosting and now has established a connection with the Chandrayaan-2 orbiter. The Chandrayaan-2 orbiter has officially welcomed the Lander Module of Chandrayaan-3. ISRO has informed that the connection between the two has been established successfully. On Aug 05, the Chandrayaan-3 spacecraft entered the lunar orbit and now it has reached its final stage.India will be in a celebratory mood if the Chandrayaan-3</div>
+    </div>
+    <div class="page2">
+        <h3>Praggnanandhaa heads to World Cup Chess finals, beating Fabiano Caruana </h3>
+        <div class="o1">R. Praggnanandhaa, continuing his dream run, took World No. 3 Fabiano Caruana out of his comfortzone, pulled him into shorter time-control games and nailed him to challenge favourite Magnus Carlsen in the final of the FIDE World Cup in Baku, Azerbaijan.Praggnanandhaa, who turned 18 during the World Cup and knocked out second seed Hikaru Nakamura on the way, now becomes the third youngest to qualify for the Candidates Tournament after Bobby Fischer and Magnus Carlsen. He is also the first Indian to reach the World Cup final since the knockout format was introduced in 2005.Praggnanandhaa, who turned 18 during the World Cup and knocked out second seed Hikaru Nakamura on the way, now becomes the third youngest to qualify for the Candidates Tournament after Bobby Fischer and Magnus Carlsen. He is also the first Indian to reach the World Cup final since the knockout format was introduced in 2005.</div>
+        <h2>India’s squad for Asia Cup: Tilak Varma gets the nod; fit-again Shreyas Iyer and K.L. Rahul back </h2>
+        <div class="o2">ing August 31, was announced on August 21, 2023. Photo: X/@BCCI
+
+            Tilak Varma is the only surprise inclusion in a batting-heavy Indian side with just two spinners in Axar Patel and Kuldeep Yadav, the latter edging Yuzvendra Chahal on the back of recent performances.
+            
+            Also returning are Shreyas Iyer and K.L. Rahul, both sidelined for a while with injuries. Shreyas has got the all-clear, while Rahul had picked up a niggle in the last few days but should be available by the time the tournament kicks off, according to Ajit Agarkar, chairman of selectors.</div>
+            <img class="img1" src="https://th-i.thgim.com/public/business/Industry/eppr3r/article67218981.ece/alternates/FREE_1200/vbk-asiacup-bccitwitter.jpg" width="190px" height="120px">
+            <div class="m7">Donald Trump threatens India with reciprocal tax if re-elected in 2024</div>
+            <p class="o3">Former U.S. president Donald Trump, who is seeking a second term, has once again raised the issue of high tax by India on certain American products in particular the iconic Harley-Davidson motorcycles, and has threatened to slap with reciprocal tax if voted to power in the 2024 presidential elections.
+
+                During his first term as the U.S. president, Mr. Trump described India as a “tariff king” and in May 2019, terminated India’s preferential market access — Generalised System of Preferences (GSP) — to the United States alleging India has not given the United States “equitable and reasonable access to its markets.”“So, I said, so they can sell their Indian motorbike. They actually make a bike, an Indian motorbike. They can sell that into our country with no tax, no tariff, but when you make a Harley, when you send it over there -- because they were doing no business. I said, how come you don't do business with India? The tariff is so high that nobody wants it. But what they want us to do is, they want us to go over and build a plant, and then you have no tariff,” Trump said.
+
+                “They said, well, that's not good. That's not our deal, OK? That's not our deal. And I came down very hard on them. But India is very big. Brazil is very big on tariffs, I mean, very, very big. We had a couple of people, like the senator from a place called Pennsylvania that I love. But this guy was just horrendous. I said, let me ask you a question. If India is charging us 200 per cent, and we're charging them </p>
+    </div>
+</body>
+</html>

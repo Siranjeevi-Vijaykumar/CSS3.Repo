@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .page1{
+            position: absolute;
+            min-width: fit-content;
+            background-color: green;
+        }
+        .p1{
+            display: flex;
+            justify-content: flex-start;
+            border: 2px solid red;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            background-color: green
+        }
+        div{
+            /* border: 2px solid rgb(236, 102, 7) ; */
+            padding: 15px 20px;
+            margin: 5px;
+            font-size: xx-large;
+            flex-direction: row;
+        }
+        .a1{
+            width: 50%;
+            background-color: aquamarine;
+        }
+        .a2{
+            width: 26%;
+            background-color: rgb(67, 107, 6);
+            margin-left: -20px;
+        }
+        .a3{
+            width: 29%;
+            background-color: greenyellow;
+            margin-top: -10px; 
+        }
+        .a4{
+            width: 50%;
+            background-color: rgb(121, 17, 45);
+            margin-left: -20px;
+            margin-top: -10px; 
+        }
+    </style>
+</head>
+<body>
+
+    <p class="page1">
+    <h3>OLD Flex box</h3>
+    <div class="p1">
+    <div class="a1">1Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ratione cumque necessitatibus. Maxime voluptate, delectus animi dolore cumque minima magni dignissimos rerum voluptas nesciunt architecto earum temporibus excepturi vel corporis.</div>
+    <div class="a2">2Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ratione cumque necessitatibus. Maxime voluptate, delectus animi dolore cumque minima magni dignissimos rerum voluptas nesciunt architecto earum temporibus excepturi vel corporis.</div>
+    <div class="a3">3Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ratione cumque necessitatibus. Maxime voluptate, delectus animi dolore cumque minima magni dignissimos rerum voluptas nesciunt architecto earum temporibus excepturi vel corporis.</div>
+    <div class="a4">4Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ratione cumque necessitatibus. Maxime voluptate, delectus animi dolore cumque minima magni dignissimos rerum voluptas nesciunt architecto earum temporibus excepturi vel corporis.</div>
+    </div>
+</p>
+</body>
+</html>

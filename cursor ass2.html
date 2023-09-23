@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use different cursors for hover in a paragraph,div,etc,</title>
+    <style>
+        p{
+            position: absolute;
+            width: 45%;
+            height: 50%;
+            text-align: justify;
+            cursor: alias;
+        }
+        p::marker{
+            background-color: rgb(117, 73, 18);
+        }
+        div{
+            position: absolute;
+            width: 45%;
+            height: 50%;
+            text-align: justify;
+            cursor: se-resize;
+            left: 51%;
+        }
+        div::selection{
+            background-color: aquamarine;
+            color: brown;
+        }
+        img{
+            position: absolute;
+            top: 65%;
+            left: 45%;
+            cursor: grab;
+        }
+        img:hover{
+            color: antiquewhite;
+            opacity: .3;
+        }
+        h1{
+            background-color: saddlebrown;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <h1 style="text-align: center;">Artificial intelligence</h1>
+    <br><hr>
+    <p>Artificial intelligence (AI) is the intelligence of machines or software, as opposed to the intelligence of human beings or animals. AI applications include advanced web search engines (e.g., Google Search), recommendation systems (used by YouTube, Amazon, and Netflix), understanding human speech (such as Siri and Alexa), self-driving cars (e.g., Waymo), generative or creative tools (ChatGPT and AI art), and competing at the highest level in strategic games (such as chess and Go).[1]
+
+        Artificial intelligence was founded as an academic discipline in 1956.[2] The field went through multiple cycles of optimism[3][4] followed by disappointment and loss of funding,[5][6] but after 2012, when deep learning surpassed all previous AI techniques,[7] there was a vast increase in funding and interest.
+        
+        The various sub-fields of AI research are centered around particular goals and the use of particular tools. The traditional goals of AI research include reasoning, knowledge representation, planning, learning, natural language processing, perception, and support for robotics.[a] General intelligence (the ability to solve an arbitrary problem) is among the field's long-term goals.[8] To solve these problems, AI researchers have adapted and integrated a wide range of problem-solving techniques, including search and mathematical optimization, formal logic, artificial neural networks, and methods based on statistics, probability, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience and many other fields.</p>
+        <div>Knowledge representation and knowledge engineering[14] allow AI programs to answer questions intelligently and make deductions about real-world facts. Formal knowledge representations are used in content-based indexing and retrieval,[15] scene interpretation,[16] clinical decision support,[17] knowledge discovery (mining "interesting" and actionable inferences from large databases),[18] and other areas.[19]
+
+            A knowledge base is a body of knowledge represented in a form that can be used by a program. An ontology is the set of objects, relations, concepts, and properties used by domain of knowledge.[20] The most general ontologies are called upper ontologies, which attempt to provide a foundation for all other knowledge and act as mediators between domain ontologies that cover specific knowledge about a particular domain (field of interest or area of concern).
+            
+            Knowledge bases need to represent things such as: objects, properties, categories and relations between objects; [21] situations, events, states and time;[22] causes and effects;[23] knowledge about knowledge (what we know about what other people know);[24] default reasoning (things that humans assume are true until they are told differently and will remain true even when other facts are changing);[25] and many other aspects and domains of knowledge.
+            
+            Among the most difficult problems in KR are: the breadth of commonsense knowledge (the set of atomic facts that the average person knows) is enormous;[26] the difficulty of knowledge acquisition and the sub-symbolic form of most commonsense knowledge (much of what people know is not represented as "facts" or "statements" that they could express verbally).[13]</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/GFO_taxonomy_tree.png/330px-GFO_taxonomy_tree.png" width="200px" height="200px">
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+     <style>
+        .O{
+            column-count:2;
+            width: 300px;
+            column-rule: 1px  dotted red;
+            column-gap: 2%;
+         }
+         .OL:hover{
+            opacity: 0.5;
+            cursor: grab;
+         }
+         .OI{
+            margin-left: 15PX;
+         }
+         #search{
+            position: absolute;
+            top: 15px;
+            left: 40%;
+         }
+         #search[type=search]{
+            width: 300px;
+            height: 35px;
+            border-radius: 20px;
+         }
+         #search:focus{
+            background-color: bisque;
+         }
+         .search[type=search]{
+            width: 300px;
+            height: 35px;
+            border-radius: 20px;
+         }
+         .search{
+            position: absolute;
+            top: 23px;
+            left: 62%;
+            background-color: rgb(86, 70, 50);
+            border-radius: 15px;
+         }
+         .aor{
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+            height: 60px;
+            background-image: linear-gradient(to top right,rgb(110, 182, 219),rgb(70, 162, 208),rgb(119, 80, 236));
+            top: 10%;
+            left: 0%;
+        }
+        .a1{
+            position: absolute;
+            box-sizing: border-box;
+            top: 20px;
+            left: 5%;
+            color: aliceblue;
+        }
+        .a2{
+            position: absolute;
+            box-sizing: border-box;
+            top: 20px;
+            left: 25%;
+            color: aliceblue;
+        }
+        .a3{
+            position: absolute;
+            box-sizing: border-box;
+            top: 20px;
+            left: 45%;
+            color: aliceblue;
+        }
+        .a4{
+            position: absolute;
+            box-sizing: border-box;
+            top: 20px;
+            left: 65%;
+            color: aliceblue;
+        }
+        .a5{
+            position: absolute;
+            box-sizing: border-box;
+            top: 20px;
+            left: 85%;
+            color: aliceblue;
+        }
+        .a1:hover{
+            background-color: black;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        .a2:hover{
+            background-color: black;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        .a3:hover{
+            background-color: black;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        .a4:hover{
+            background-color: black;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        .a5:hover{
+            background-color: black;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        .link1{
+         text-decoration: none;
+         color: white;
+        }
+        .link2{
+         text-decoration: none;
+         color: white;
+        }
+        a:visited{
+         color: lawngreen;
+        }
+        a:link{
+         color: palegreen;
+        }
+        .table1{
+         position: absolute;
+         top: 25%;
+         left: 30%;
+        }
+        th,td{
+            border: 2px solid darkorchid;
+            
+        }
+        table{
+            border-collapse: collapse;
+            
+        }
+        thead>tr:nth-child(1){
+            background-color: rgb(111, 120, 228);
+        }
+        td:nth-child(odd){
+            background-image: linear-gradient(to top right, rgb(100, 167, 214), rgb(228, 85, 109));
+        }
+        td:nth-child(even){
+            background-color: rgb(200, 234, 89);
+        } 
+    </style> 
+</head>
+<body>
+    <div class="O">
+        <div class="OL"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjIuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZpZXdCb3g9IjAgMCAxMTU1IDE2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiPjxwYXRoIGQ9Ik0xNTkuNzUgODEuNTRjMC00NC40OSAzNi42My04MC40NyA4Mi40My04MC40NyA0Ni4xMiAwIDgyLjc2IDM2IDgyLjc2IDgwLjQ3IDAgNDQuMTYtMzYuNjQgODAuOC04Mi43NiA4MC44LTQ1LjggMC04Mi40My0zNi42OC04Mi40My04MC44em0xMjUuNjEgMGMwLTIyLjI0LTE5LjMtNDEuODctNDMuMTgtNDEuODctMjMuNTUgMC00Mi44NSAxOS42My00Mi44NSA0MS44NyAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yIDIzLjkyIDAgNDMuMTgtMTkuNjMgNDMuMTgtNDIuMnptNzA1LjYzIDEuMzFjMC00OC43NCAzOS41OC04MS43OCA3NS41Ny04MS43OCAyNC41MyAwIDM4LjYgNy41MiA0OC4wOCAyMS45MmwzLjc3LTE5aDM2Ljc5djE1NS40aC0zNi43OWwtNC43NS0xNmMtMTAuNzkgMTEuNzgtMjQuMjEgMTktNDcuMSAxOS0zNS4zMy0uMDUtNzUuNTctMzEuMTMtNzUuNTctNzkuNTR6bTEyNS42MS0uMzNjLS4wOS0yMy41MjctMTkuNDctNDIuODM1LTQzLTQyLjgzNS0yMy41OSAwLTQzIDE5LjQxMS00MyA0M3YuMTY1YzAgMjEuNTkgMTkuMyA0MC44OSA0Mi44NiA0MC44OSAyMy44NSAwIDQzLjE0LTE5LjMgNDMuMTQtNDEuMjJ6TTk0NS43OCAyMlY0aC00MC4yM3YxNTUuMzloNDAuMjNWNzUuNjZjMC0yNS4xOSAxMi40NC0zOC4yNyAzNC0zOC4yNyAxLjQzIDAgMi43OS4xIDQuMTIuMjNMOTkxLjM2LjExYy0yMC45Ny4xMS0zNi4xNyA3LjMtNDUuNTggMjEuODl6bS00MDQuMjcuMDF2LTE4bC00MC4yMy4wOS4zNCAxNTUuMzcgNDAuMjMtLjA5LS4yMi04My43MmMtLjA2LTI1LjE4IDEyLjM1LTM4LjI5IDMzLjkzLTM4LjM0IDEuMzc2LjAwNCAyLjc1Mi4wODEgNC4xMi4yM0w1ODcuMSAwYy0yMSAuMTctMzYuMjIgNy4zOS00NS41OSAyMi4wMXpNMzM4Ljg4IDk5LjJWNC4wMWg0MC4yMlY5NC4zYzAgMTkuOTUgMTEuMTIgMzEuNzMgMzAuNDIgMzEuNzMgMjEuNTkgMCAzNC0xMy4wOSAzNC0zOC4yOFY0LjAxaDQwLjI0djE1NS4zOGgtNDAuMjF2LTE4Yy05LjQ4IDE0LjcyLTI0Ljg2IDIxLjkyLTQ2LjEyIDIxLjkyLTM1Ljk4LjAxLTU4LjU1LTI2LjE2LTU4LjU1LTY0LjExem0zOTEuNzQtMTcuNDhjLjA5LTQzLjUxIDMxLjIzLTgwLjc0IDgwLjYyLTgwLjY1IDQ1LjguMDkgNzguMTEgMzYuNzggNzggODAgLjAxIDQuMjczLS4zMyA4LjU0LTEgMTIuNzZsLTExOC40MS0uMjJjNC41NCAxOC42NSAxOS44OSAzMi4wOSA0My4xMiAzMi4xNCAxNC4wNiAwIDI5LjEyLTUuMTggMzguMy0xNi45NGwyNy40NCAyMmMtMTQuMTEgMTkuOTMtMzkgMzEuNjYtNjUuNDggMzEuNjEtNDYuNzUtLjE2LTgyLjY3LTM1LjIzLTgyLjU5LTgwLjd6bTExOC4xMi0xNi4xNGMtMi4yNi0xNS43LTE4LjU5LTI3Ljg0LTM3Ljg5LTI3Ljg3LTE4LjY1IDAtMzMuNzEgMTEuMDYtMzkuNjMgMjcuNzNsNzcuNTIuMTR6bS0yNjEuNCA1OS45NGwzNS43Ni0xOC43MmM1LjkxIDEyLjgxIDE3LjczIDIwLjM2IDM0LjQ4IDIwLjM2IDE1LjQzIDAgMjEuMzQtNC45MiAyMS4zNC0xMS44MiAwLTI1LTg0LjcxLTkuODUtODQuNzEtNjcgMC0zMS41MiAyNy41OC00OC4yNiA2MS43Mi00OC4yNiAyNS45NCAwIDQ4LjkyIDExLjQ5IDYxLjQgMzIuODNsLTM1LjQ0IDE4Ljc1Yy01LjI1LTEwLjUxLTE1LjEtMTYuNDItMjcuNTgtMTYuNDItMTIuMTQgMC0xOC4wNiA0LjI3LTE4LjA2IDExLjQ5IDAgMjQuMyA4NC43MSA4Ljg3IDg0LjcxIDY3IDAgMzAuMjEtMjQuNjIgNDguNTktNjQuMzUgNDguNTktMzMuODItLjAzLTU3LjQ2LTExLjE5LTY5LjI3LTM2Ljh6TTAgODEuNTRDMCAzNi43MyAzNi42My43NCA4Mi40My43NGMyNy45NDctLjE5NiA1NC4xODIgMTMuNzM3IDY5LjY3IDM3bC0zNC4zNCAxOS45MmE0Mi45NzIgNDIuOTcyIDAgMDAtMzUuMzMtMTguMzJjLTIzLjU1IDAtNDIuODUgMTkuNjMtNDIuODUgNDIuMiAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yYTQyLjUwMiA0Mi41MDIgMCAwMDM2LjMxLTIwbDM0IDIwLjI4Yy0xNS4zMDcgMjMuOTU1LTQxLjkwMiAzOC40MzEtNzAuMzMgMzguMjhDMzYuNjMgMTYyLjM0IDAgMTI1LjY2IDAgODEuNTR6IiBmaWxsPSIjMDA1NkQyIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4=" width="100px" height="50px"></div>
+        <div class="OI"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT05jvqOA5QG6d549Hcjqn3UwkddOK777VYqA&usqp=CAU" width="70px" height="50px"></div>
+        <input id="search" type="search" value="   search in coarsh"><input class="search" type="button" value="search">
+    </div><HR>
+      <div class="aor">
+         <div class="a1"><a class="link1" href="https://www.coursera.org/programs/kgisl-faculty-learning-program-s1jux?currentTab=CATALOG">Home</a></div><div class="a2"><a href="@" class="link2">about</a></div><div class="a3">Products</div><div class="a4">Blog</div><div class="a5">Contact</div>
+     </div>
+     <div class="table1">
+     <center><table>
+      <Caption>TIME TABLE</Caption>
+      <thead>
+          <tr>
+              <th>Day/period</th>
+              <th>I<br>9.30-10.20</th>
+              <th>II<br>10.20-11.10</th>
+              <th>III<br>11.10-12.00</th>
+              <th>12.00-12.40</th>
+              <th>IV<br>12.40-1.30</th>
+              <th>V<br>1.30-2.20</th>
+              <th>VI<br>2.20-3.10</th>
+              <th>VII<br>3.10-4.00</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>monday</td>
+              <td>ENG</td>
+              <td>MAT</td>
+              <td>CHE</td>
+              <td rowspan="6"><b>L<br>u<br>n<br>c<br>h</b></td>
+              <td colspan="3">LAB</td>
+              <td>phy</td>
+          </tr>
+          <tr>
+              <td>Tuesday</td>
+              <td colspan="3">LAB</td>
+              <td>ENG</td>
+              <td>Che</td>            
+              <td>MAT</td>
+              <td>SPORTS</td>               
+          </tr>
+          <tr>
+              <td>Wednesday</td>
+              <td>MAT</td>
+              <td>Phy</td>
+              <td>ENG</td>               
+              <td>CHE</td>
+              <td colspan="3">LIBRARY</td>
+          </tr>
+          <tr>
+              <td>Thursday</td>
+              <td>PHY</td>
+              <td>ENG</td>
+              <td>CHE</td>
+              <td colspan="3">LAB</td>
+              <td>MAT</td>
+          </tr>
+          <tr>
+              <td>Friday</td>
+              <td colspan="3">LAB</td>
+              <td>MAT</td>
+              <td>CHE</td>
+              <td>ENG</td>
+              <td>PHY</td>
+          </tr>
+          <tr>
+              <td>Saturday</td>
+              <td>ENG</td>
+              <td>CHE</td>
+              <td>MAT</td>
+              <td colspan="3">SEMINAR</td>
+              <td>SPORTS</td>
+          </tr>
+      </tbody>
+  </table></center></div>
+</body>
+</html>

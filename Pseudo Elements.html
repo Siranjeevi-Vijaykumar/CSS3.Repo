@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        .all::first-letter{
+            color: goldenrod;
+            font-size: larger;
+            }
+        .all::first-line{
+            color: brown;
+            font-variant: small-caps;
+        }
+        .all::before{
+            content: "AI ";
+        }
+        p::after{
+            content: "facts are changing )" ;
+        }
+        p::selection{
+            color: red;
+            font-size: 23px;
+        }
+        h1{
+            text-align: center;
+        }
+        .all{
+            position: absolute;
+            width: 45%;
+            height: 20%;
+            border: 4px solid seagreen;
+            top: 12%;
+        }
+        p{
+            position: absolute;
+            width: 45%;
+            height: 20%;
+            border: 4px solid seagreen;
+            left: 47%;
+            top: 10%;
+        }
+        .all::marker{
+            color: orange;
+            font-size: x-small;
+        }
+    </style>
+</head>
+<body>
+    <h1>Artificial intelligence</h1>
+    <div class="all">was founded as an academic discipline in 1956. The field went through multiple cycles of optimism followed by disappointment and loss of funding, but after 2012, when deep learning surpassed all previous AI techniques, there was a vast increase in funding and interest.<br>The general problem of simulating (or creating) intelligence has been broken down into sub-problems. These consist of particular traits or capabilities that researchers expect an intelligent system to display. The traits described below have received the most attention and cover the scope of AI research.</div>
+    <p>Knowledge bases need to represent things such as: objects, properties, categories and relations between objects; [21] situations, events, states and time;[22] causes and effects;[23] knowledge about knowledge (what we know about what other people know);[24] default reasoning (things that humans assume are true until they are told differently and will remain true even when other </p>
+</body>
+</html>
